@@ -8,24 +8,6 @@
 
 ![splash](asset/splash.png)
 
-## Dependencies
-
-All dependencies are included in `environment.yml`. To install, run
-
-```shell
-conda env create -f environment.yml
-```
-
-(Make sure you have installed [Anaconda](https://www.anaconda.com/) before running.)
-
-Then, activate the installed environment by
-
-```
-conda activate auto_novel
-```
-
-## Overview
-
 We provide code and models for our experiments on CIFAR10, CIFAR100, SVHN, OmniGlot, and ImageNet:
 - Code for self-supervised learning
 - Code for supervised learning

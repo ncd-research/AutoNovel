@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
 
+cd ../
+
+CUDA_VISIBLE_DEVICES=0
+
 python auto_novel.py \
-        --dataset_root $1 \
-        --exp_root $2 \
-        --warmup_model_dir $3 \
+        --dataset_root /home/miil/Datasets/FSCIL-CEC \
+        --exp_root results \
+        --warmup_model_dir cache/supervised_learning/resnet_rotnet_cifar100.pth \
         --lr 0.1 \
         --gamma 0.1 \
         --weight_decay 1e-4 \
